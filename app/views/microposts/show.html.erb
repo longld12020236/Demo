@@ -19,9 +19,11 @@
 	      		<%= will_paginate @comments %>
 	    	<% end %>
 	    	<p><br><p>
+	    	<% if logged_in? %>
 			<section class="micropost_form">
 	    		<%= render 'shared/comment_form' %>
 			</section>
+			<%end%>
 	  	</div>
 	</div>
 </div>
